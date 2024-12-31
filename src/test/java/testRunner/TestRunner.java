@@ -10,7 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = ".//Test_scripts/Registration.feature",
 		glue = "stepDefinitions",
-		dryRun=false
+		dryRun=false,
+		monochrome = true,
+		plugin = {"pretty","html:test-output"}
 		)
 
 public class TestRunner {
